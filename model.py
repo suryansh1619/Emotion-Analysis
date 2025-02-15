@@ -9,7 +9,6 @@ from nltk.stem import WordNetLemmatizer
 from nltk.corpus import wordnet
 from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
-# nltk.data.path.append('C:\\Users\\suryansh\\AppData\\Roaming\\nltk_data')
 
 nltk.data.path.append('/usr/share/nltk_data')
 nltk.download("stopwords")
@@ -21,21 +20,18 @@ model = tf.keras.models.load_model('emotion_analysis.keras')
 lemmatizer = WordNetLemmatizer()
 stop_words = set(stopwords.words("english"))
 
-label_mapping = {
-    6: "hate",
-    8: "neutral",
-    0: "anger",
-    7: "love",
-    12: "worry",
-    9: "relief",
-    5: "happiness",
-    4: "fun",
-    2: "empty",
-    3: "enthusiasm",
-    10: "sadness",
-    11: "surprise",
-    1: "boredom",
+label_mapping = {1:'enthusiasm',
+    2: 'fun',
+    0: 'anger', 
+    6: 'neutral', 
+    5: 'love', 
+    3: 'happiness', 
+    8: 'sadness', 
+    7: 'relief', 
+    4: 'hate'
 }
+
+
 
 def text_preprocess(text):
     text = contractions.fix(text)
