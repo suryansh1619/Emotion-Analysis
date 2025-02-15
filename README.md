@@ -1,5 +1,5 @@
 # 😊 Emotion Analysis
-🔗 **Live Demo:** [View Project](https://emotion-analysis-29.streamlit.app/) 
+🔗 **Live Demo:** [View Project](https://emotion-analysis-29.streamlit.app/)
 This project is a **Natural Language Processing (NLP)**-based solution for analyzing emotions in text data. It classifies text into multiple emotion categories using **machine learning** and **deep learning** techniques.
 
 # 🚀 Features
